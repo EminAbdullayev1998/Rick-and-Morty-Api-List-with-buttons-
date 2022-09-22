@@ -1,0 +1,119 @@
+@import 'reset';
+
+@font-face {
+    font-family: myFont;
+    src: url('fonts/get_schwifty.ttf');
+}
+
+@font-face {
+    font-family: liFont;
+    src: url('fonts/NugiaVintage.ttf');
+}
+
+section{
+    width: 100%;
+    height: 2500px;
+    background-color: blueviolet;
+    background-image: url('img/bg2.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+    .container{
+        width: 35%;
+        height: 2200px;
+        background-color: white;
+
+        .title{
+            width: 100%;
+            height: 100px;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            h1{
+                color: skyblue;
+                font-size: 50px;
+                font-family: myFont;
+            }
+        }
+
+        .list{
+            width: 100%;
+            height: 2000px;
+            background-color: aqua;
+            display: flex;
+
+            .names{
+                width: 50%;
+                height: 2000px;
+                background-color: gold;
+
+                p{
+                    width: 100%;
+                    height: 200px;
+                    font-size: 30px;
+                    font-weight: 700;
+                    font-family: liFont;
+                    background-color: white;
+                }
+
+                p:nth-child(even){
+                      background-color: gray;
+                      color: white;
+                }
+
+                p:nth-child(odd){
+                    background-color: yellow;
+                    color: black;
+              }
+            }
+
+
+            .photos{
+                width: 50%;
+                height: 2000px;
+                background-color: chartreuse;
+
+                img{
+                    width: 100%;
+                    height: 198px;
+                }
+            }
+        }
+
+        .buttons{
+            width: 100%;
+            height: 100px;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            #btn1{
+                width: 10%;
+                height: 35px;
+                background-color: skyblue;
+                color: white;
+                font-size: 20px;
+                cursor: pointer;
+                &:hover{
+                    background-color: rgb(84, 155, 183);
+                }
+            }
+
+            #btn2{
+                width: 10%;
+                height: 35px;
+                background-color: skyblue;
+                color: white;
+                font-size: 20px;
+                cursor: pointer;
+                &:hover{
+                    background-color: rgb(84, 155, 183);
+                }
+            }
+        }
+    }
+}

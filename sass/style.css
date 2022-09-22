@@ -1,0 +1,155 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: myFont;
+  src: url("fonts/get_schwifty.ttf");
+}
+@font-face {
+  font-family: liFont;
+  src: url("fonts/NugiaVintage.ttf");
+}
+section {
+  width: 100%;
+  height: 2500px;
+  background-color: blueviolet;
+  background-image: url("img/bg2.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+section .container {
+  width: 35%;
+  height: 2200px;
+  background-color: white;
+}
+section .container .title {
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section .container .title h1 {
+  color: skyblue;
+  font-size: 50px;
+  font-family: myFont;
+}
+section .container .list {
+  width: 100%;
+  height: 2000px;
+  background-color: aqua;
+  display: flex;
+}
+section .container .list .names {
+  width: 50%;
+  height: 2000px;
+  background-color: gold;
+}
+section .container .list .names p {
+  width: 100%;
+  height: 200px;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: liFont;
+  background-color: white;
+}
+section .container .list .names p:nth-child(even) {
+  background-color: gray;
+  color: white;
+}
+section .container .list .names p:nth-child(odd) {
+  background-color: yellow;
+  color: black;
+}
+section .container .list .photos {
+  width: 50%;
+  height: 2000px;
+  background-color: chartreuse;
+}
+section .container .list .photos img {
+  width: 100%;
+  height: 198px;
+}
+section .container .buttons {
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section .container .buttons #btn1 {
+  width: 10%;
+  height: 35px;
+  background-color: skyblue;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+section .container .buttons #btn1:hover {
+  background-color: rgb(84, 155, 183);
+}
+section .container .buttons #btn2 {
+  width: 10%;
+  height: 35px;
+  background-color: skyblue;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+section .container .buttons #btn2:hover {
+  background-color: rgb(84, 155, 183);
+}/*# sourceMappingURL=style.css.map */
